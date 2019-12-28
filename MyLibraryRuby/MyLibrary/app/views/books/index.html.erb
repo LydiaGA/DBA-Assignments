@@ -1,0 +1,9 @@
+<h1>My Books</h1>
+
+<% @books.each do |book| %>
+    <div class="container">
+      <h3><%= book.title %></h3>
+      <p><%= link_to 'Read', book_path(book), :class => "btn btn-default" %></p>
+        <hr>
+    </div>
+<% end %>
