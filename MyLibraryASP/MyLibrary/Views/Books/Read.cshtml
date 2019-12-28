@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Read";
+}
+
+    <div class="container">
+
+        <h2>@Model.title</h2>
+        <hr>
+        <p>@Model.content</p>
+
+        @Html.ActionLink("Edit", "Edit", new { book_id = Model.book_id }, new { @class = "btn btn-default" })
+        @Html.ActionLink("Delete", "Delete", new { book_id = Model.book_id }, new { @class = "btn btn-danger" })
+
+    </div>
+
+
+

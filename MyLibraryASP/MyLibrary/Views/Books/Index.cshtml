@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h1>My Books</h1>
+
+
+@foreach (var book in Model)
+{
+<div class="container">
+    <h2>@book.title</h2>
+    <p>
+        @book.description
+    </p>
+    <p>@Html.ActionLink("Read", "Read", new { book_id = book.book_id },  new {@class = "btn btn-default"})</p>
+    <hr>
+</div>
+}
+  

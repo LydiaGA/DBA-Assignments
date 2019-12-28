@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Read";
+}
+
+    <div class="container">
+
+        <h2>@Model["Title"].InnerText</h2>
+        <hr>
+        <p>@Model["Content"].InnerText</p>
+
+        <a class="btn btn-default" href='/Books/Edit/@Model["Id"].InnerText'>Edit</a>
+        <a class="btn btn-danger" href='/Books/Delete/@Model["Id"].InnerText'>Delete</a>
+
+    </div>
+
+
+
